@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2019 1:59:55 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.exam.Seekerscommons" table="seekerscommons" catalog="mkazi" optimistic-lock="version">
+        <id name="scid" type="java.lang.Integer">
+            <column name="scid" />
+            <generator class="identity" />
+        </id>
+        <property name="sid" type="string">
+            <column name="sid" length="45" />
+        </property>
+        <property name="fcolor" type="string">
+            <column name="fcolor" length="45" />
+        </property>
+        <property name="ffood" type="string">
+            <column name="ffood" length="45" />
+        </property>
+        <property name="prefertolive" type="string">
+            <column name="prefertolive" length="45" />
+        </property>
+        <property name="religiouspractices" type="string">
+            <column name="religiouspractices" length="45" />
+        </property>
+        <property name="fplay" type="string">
+            <column name="fplay" length="45" />
+        </property>
+        <property name="recreation" type="string">
+            <column name="recreation" length="45" />
+        </property>
+        <property name="interestlivefamily" type="string">
+            <column name="interestlivefamily" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

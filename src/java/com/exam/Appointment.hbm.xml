@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2019 1:59:55 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.exam.Appointment" table="appointment" catalog="mkazi" optimistic-lock="version">
+        <id name="appointmentid" type="java.lang.Integer">
+            <column name="appointmentid" />
+            <generator class="identity" />
+        </id>
+        <property name="bgname" type="string">
+            <column name="bgname" length="45" />
+        </property>
+        <property name="bgnid" type="string">
+            <column name="bgnid" length="45" />
+        </property>
+        <property name="bgdop" type="string">
+            <column name="bgdop" length="45" />
+        </property>
+        <property name="bname" type="string">
+            <column name="bname" length="45" />
+        </property>
+        <property name="bnid" type="string">
+            <column name="bnid" length="45" />
+        </property>
+        <property name="bdop" type="string">
+            <column name="bdop" length="45" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="45" />
+        </property>
+        <property name="address" type="string">
+            <column name="address" length="265" />
+        </property>
+        <property name="mohor" type="string">
+            <column name="mohor" length="45" />
+        </property>
+        <property name="mtype" type="string">
+            <column name="mtype" length="45" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="10" />
+        </property>
+        <property name="apdate" type="date">
+            <column name="apdate" length="10" />
+        </property>
+        <property name="messege" type="string">
+            <column name="messege" length="265" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="45" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="20" />
+        </property>
+        <property name="kazimessage" type="string">
+            <column name="kazimessage" length="160" />
+        </property>
+        <property name="kaziid" type="string">
+            <column name="kaziid" length="11" />
+        </property>
+        <property name="kname" type="string">
+            <column name="kname" length="45" />
+        </property>
+        <property name="districtid" type="string">
+            <column name="districtid" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

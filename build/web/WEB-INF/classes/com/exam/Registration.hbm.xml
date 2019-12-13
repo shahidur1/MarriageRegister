@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2019 1:59:55 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.exam.Registration" table="registration" catalog="mkazi" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="fname" type="string">
+            <column name="fname" length="45" />
+        </property>
+        <property name="marriageplace" type="string">
+            <column name="marriageplace" length="450" />
+        </property>
+        <property name="bgname" type="string">
+            <column name="bgname" length="450" />
+        </property>
+        <property name="bgage" type="string">
+            <column name="bgage" length="450" />
+        </property>
+        <property name="bname" type="string">
+            <column name="bname" length="450" />
+        </property>
+        <property name="btype" type="string">
+            <column name="btype" length="45" />
+        </property>
+        <property name="bage" type="string">
+            <column name="bage" length="45" />
+        </property>
+        <property name="byakil" type="string">
+            <column name="byakil" length="450" />
+        </property>
+        <property name="byakilwitness" type="string">
+            <column name="byakilwitness" length="650" />
+        </property>
+        <property name="bgyakil" type="string">
+            <column name="bgyakil" length="450" />
+        </property>
+        <property name="bgyakilwitness" type="string">
+            <column name="bgyakilwitness" length="650" />
+        </property>
+        <property name="marriagewitness" type="string">
+            <column name="marriagewitness" length="650" />
+        </property>
+        <property name="marriagedate" type="string">
+            <column name="marriagedate" length="45" />
+        </property>
+        <property name="denmohor" type="java.lang.Double">
+            <column name="denmohor" precision="22" scale="0" />
+        </property>
+        <property name="dowarmuajjal" type="string">
+            <column name="dowarmuajjal" length="45" />
+        </property>
+        <property name="denmohorpaid" type="string">
+            <column name="denmohorpaid" length="45" />
+        </property>
+        <property name="property" type="string">
+            <column name="property" length="45" />
+        </property>
+        <property name="condition" type="string">
+            <column name="condition" length="650" />
+        </property>
+        <property name="powerofdivorce" type="string">
+            <column name="powerofdivorce" length="450" />
+        </property>
+        <property name="husbandrightofdivorce" type="string">
+            <column name="husbandrightofdivorce" length="450" />
+        </property>
+        <property name="dowerpaper" type="string">
+            <column name="dowerpaper" length="45" />
+        </property>
+        <property name="marriagetype" type="string">
+            <column name="marriagetype" length="45" />
+        </property>
+        <property name="permissionnumber" type="string">
+            <column name="permissionnumber" length="45" />
+        </property>
+        <property name="solemnizer" type="string">
+            <column name="solemnizer" length="450" />
+        </property>
+        <property name="mrdate" type="string">
+            <column name="mrdate" length="45" />
+        </property>
+        <property name="netpay" type="java.lang.Double">
+            <column name="netpay" precision="22" scale="0" />
+        </property>
+        <property name="kaziid" type="string">
+            <column name="kaziid" length="45" />
+        </property>
+        <property name="districtid" type="java.lang.Integer">
+            <column name="districtid" />
+        </property>
+        <property name="district" type="string">
+            <column name="district" length="45" />
+        </property>
+        <property name="fulladdress" type="string">
+            <column name="fulladdress" length="45" />
+        </property>
+        <property name="paydate" type="string">
+            <column name="paydate" length="45" />
+        </property>
+        <property name="paystatus" type="string">
+            <column name="paystatus" length="45" />
+        </property>
+        <property name="conjugalstatus" type="string">
+            <column name="conjugalstatus" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2019 1:59:55 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.exam.Yoformdivorce" table="yoformdivorce" catalog="mkazi" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="husband" type="string">
+            <column name="husband" length="45" />
+        </property>
+        <property name="hnid" type="string">
+            <column name="hnid" length="45" />
+        </property>
+        <property name="wife" type="string">
+            <column name="wife" length="45" />
+        </property>
+        <property name="wnid" type="string">
+            <column name="wnid" length="45" />
+        </property>
+        <property name="ddate" type="string">
+            <column name="ddate" length="45" />
+        </property>
+        <property name="dtype" type="string">
+            <column name="dtype" length="45" />
+        </property>
+        <property name="dvdtype" type="string">
+            <column name="dvdtype" length="45" />
+        </property>
+        <property name="dplace" type="string">
+            <column name="dplace" length="45" />
+        </property>
+        <property name="placeperson" type="string">
+            <column name="placeperson" length="45" />
+        </property>
+        <property name="dwithnesses" type="string">
+            <column name="dwithnesses" length="45" />
+        </property>
+        <property name="identifiered" type="string">
+            <column name="identifiered" length="45" />
+        </property>
+        <property name="registerdate" type="string">
+            <column name="registerdate" length="45" />
+        </property>
+        <property name="netpay" type="java.lang.Double">
+            <column name="netpay" precision="22" scale="0" />
+        </property>
+        <property name="kaziid" type="string">
+            <column name="kaziid" length="45" />
+        </property>
+        <property name="districtid" type="java.lang.Integer">
+            <column name="districtid" />
+        </property>
+        <property name="district" type="string">
+            <column name="district" length="45" />
+        </property>
+        <property name="fulladdress" type="string">
+            <column name="fulladdress" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2019 1:59:55 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.exam.Nrfeepay" table="nrfeepay" catalog="mkazi" optimistic-lock="version">
+        <id name="feeid" type="java.lang.Integer">
+            <column name="feeid" />
+            <generator class="identity" />
+        </id>
+        <property name="appointmentid" type="string">
+            <column name="appointmentid" length="45" />
+        </property>
+        <property name="bgname" type="string">
+            <column name="bgname" length="45" />
+        </property>
+        <property name="bname" type="string">
+            <column name="bname" length="45" />
+        </property>
+        <property name="bnd" type="string">
+            <column name="bnd" length="45" />
+        </property>
+        <property name="mohor" type="java.lang.Double">
+            <column name="mohor" precision="22" scale="0" />
+        </property>
+        <property name="fee" type="java.lang.Double">
+            <column name="fee" precision="22" scale="0" />
+        </property>
+        <property name="vat" type="java.lang.Double">
+            <column name="vat" precision="22" scale="0" />
+        </property>
+        <property name="netpay" type="java.lang.Double">
+            <column name="netpay" precision="22" scale="0" />
+        </property>
+        <property name="date" type="date">
+            <column name="date" length="10" />
+        </property>
+        <property name="kaziid" type="string">
+            <column name="kaziid" length="11" />
+        </property>
+        <property name="districtid" type="java.lang.Integer">
+            <column name="districtid" />
+        </property>
+        <property name="district" type="string">
+            <column name="district" length="45" />
+        </property>
+        <property name="fulladdress" type="string">
+            <column name="fulladdress" length="45" />
+        </property>
+        <property name="kname" type="string">
+            <column name="kname" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

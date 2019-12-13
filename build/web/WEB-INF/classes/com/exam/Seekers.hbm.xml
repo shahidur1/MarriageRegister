@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2019 1:59:55 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.exam.Seekers" table="seekers" catalog="mkazi" optimistic-lock="version">
+        <id name="sid" type="java.lang.Integer">
+            <column name="sid" />
+            <generator class="identity" />
+        </id>
+        <property name="forname" type="string">
+            <column name="forname" length="45" />
+        </property>
+        <property name="surname" type="string">
+            <column name="surname" length="45" />
+        </property>
+        <property name="fname" type="string">
+            <column name="fname" length="45" />
+        </property>
+        <property name="mname" type="string">
+            <column name="mname" length="45" />
+        </property>
+        <property name="dob" type="date">
+            <column name="dob" length="10" />
+        </property>
+        <property name="sex" type="string">
+            <column name="sex" length="45" />
+        </property>
+        <property name="religion" type="string">
+            <column name="religion" length="45" />
+        </property>
+        <property name="education" type="string">
+            <column name="education" length="45" />
+        </property>
+        <property name="edusub" type="string">
+            <column name="edusub" length="45" />
+        </property>
+        <property name="homedistrict" type="string">
+            <column name="homedistrict" length="45" />
+        </property>
+        <property name="profession" type="string">
+            <column name="profession" length="45" />
+        </property>
+        <property name="pfield" type="string">
+            <column name="pfield" length="45" />
+        </property>
+        <property name="pplace" type="string">
+            <column name="pplace" length="45" />
+        </property>
+        <property name="familystatus" type="string">
+            <column name="familystatus" length="45" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" />
+        </property>
+        <property name="contact" type="string">
+            <column name="contact" length="45" />
+        </property>
+        <property name="weight" type="java.lang.Double">
+            <column name="weight" precision="22" scale="0" />
+        </property>
+        <property name="height" type="java.lang.Double">
+            <column name="height" precision="22" scale="0" />
+        </property>
+        <property name="facecolor" type="string">
+            <column name="facecolor" length="45" />
+        </property>
+    </class>
+</hibernate-mapping>

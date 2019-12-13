@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 1, 2019 1:59:55 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.exam.Kaziappro" table="kaziappro" catalog="mkazi" optimistic-lock="version">
+        <id name="approvalid" type="java.lang.Integer">
+            <column name="approvalid" />
+            <generator class="identity" />
+        </id>
+        <property name="kaziid" type="int">
+            <column name="kaziid" not-null="true" />
+        </property>
+        <property name="district" type="string">
+            <column name="district" length="45" />
+        </property>
+        <property name="districtid" type="java.lang.Integer">
+            <column name="districtid" />
+        </property>
+        <property name="ps" type="string">
+            <column name="ps" length="45" />
+        </property>
+        <property name="unionn" type="string">
+            <column name="unionn" length="45" />
+        </property>
+        <property name="nklicence" type="string">
+            <column name="nklicence" length="45" />
+        </property>
+        <property name="kname" type="string">
+            <column name="kname" length="120" />
+        </property>
+        <property name="nid" type="string">
+            <column name="nid" length="45" />
+        </property>
+        <property name="contact" type="string">
+            <column name="contact" length="14" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" />
+        </property>
+        <property name="approval" type="string">
+            <column name="approval" length="45" />
+        </property>
+        <property name="status" type="string">
+            <column name="status" length="45" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="12" />
+        </property>
+    </class>
+</hibernate-mapping>
